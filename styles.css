@@ -46,3 +46,30 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+
+/* main styling below */
+html {
+	box-sizing: border-box;
+}
+.container {
+	width: 1000px;
+	height: 1000px;
+	align-items: center;
+	margin: auto;
+	background-image: url(back-img.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+form {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	width: 100%;
+}
