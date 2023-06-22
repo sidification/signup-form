@@ -51,25 +51,78 @@ table {
 /* main styling below */
 html {
 	box-sizing: border-box;
+	font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 .container {
+	display: flex;
 	width: 1000px;
 	height: 1000px;
 	align-items: center;
 	margin: auto;
-	background-image: url(back-img.jpg);
+	background: 
+    /* top, transparent red */ 
+    linear-gradient(
+      rgba(255, 255, 255, 0.400), 
+      rgba(255, 255, 255, 0.400)
+    ), url(back-img.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	justify-content: space-around;
 }
 
+.heading {
+	display: flex;
+	width: 60%;
+	height: auto;
+	align-items: center;
+	justify-content: center;
+	font-size: 2rem;
+}
+
+ .sign-up {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	font-size: 1.25rem;
+	margin: auto;
+}
+
+.header-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 100%;
+	height: 20%;
+	margin: 0 5px;
+	
+}
+
+fieldset > div {
+	display: flex;
+	flex-direction: column;
+	font-size: 1rem;;
+}
 
 form {
 	display: flex;
 	flex-direction: column;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	height: 100%;
-	width: 100%;
+	align-items: stretch;
+	row-gap: 5px;
+	padding: 5px;
+	box-shadow: 12px 12px 2px 1px #9900ff00;
+}
+form fieldset {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+div.submit {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
